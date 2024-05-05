@@ -45,12 +45,12 @@ npx cap sync
 
 <docgen-index>
 
-- [`auth(...)`](#auth)
-- [`addListener('authSuccess', ...)`](#addlistenerauthsuccess-)
-- [`addListener('authError', ...)`](#addlistenerautherror-)
-- [`removeAllListeners()`](#removealllisteners)
-- [Interfaces](#interfaces)
-- [Enums](#enums)
+* [`auth(...)`](#auth)
+* [`addListener('authSuccess', ...)`](#addlistenerauthsuccess-)
+* [`addListener('authError', ...)`](#addlistenerautherror-)
+* [`removeAllListeners()`](#removealllisteners)
+* [Interfaces](#interfaces)
+* [Enums](#enums)
 
 </docgen-index>
 
@@ -69,7 +69,8 @@ auth(options: { social: SocialAuthEnum; }) => Promise<{ key: string; success: bo
 
 **Returns:** <code>Promise&lt;{ key: string; success: boolean; }&gt;</code>
 
----
+--------------------
+
 
 ### addListener('authSuccess', ...)
 
@@ -84,7 +85,8 @@ addListener(eventName: 'authSuccess', listenerFunc: (event: AuthEvent) => void) 
 
 **Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
----
+--------------------
+
 
 ### addListener('authError', ...)
 
@@ -99,7 +101,8 @@ addListener(eventName: 'authError', listenerFunc: (event: AuthEvent) => void) =>
 
 **Returns:** <code>Promise&lt;<a href="#pluginlistenerhandle">PluginListenerHandle</a>&gt; & <a href="#pluginlistenerhandle">PluginListenerHandle</a></code>
 
----
+--------------------
+
 
 ### removeAllListeners()
 
@@ -107,15 +110,18 @@ addListener(eventName: 'authError', listenerFunc: (event: AuthEvent) => void) =>
 removeAllListeners() => Promise<void>
 ```
 
----
+--------------------
+
 
 ### Interfaces
+
 
 #### PluginListenerHandle
 
 | Prop         | Type                                      |
 | ------------ | ----------------------------------------- |
 | **`remove`** | <code>() =&gt; Promise&lt;void&gt;</code> |
+
 
 #### AuthEvent
 
@@ -124,7 +130,9 @@ removeAllListeners() => Promise<void>
 | **`key`**      | <code>string</code> |
 | **`userInfo`** | <code>any</code>    |
 
+
 ### Enums
+
 
 #### SocialAuthEnum
 
