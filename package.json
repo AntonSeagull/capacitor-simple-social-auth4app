@@ -1,6 +1,6 @@
 {
   "name": "capacitor-simple-social-auth4app",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "SimpleSocialAuth4App is a Capacitor plugin designed to simplify the process of authenticating users through various social networks using the auth4app service. It provides a seamless and secure authentication experience by opening a dedicated WebView for user credentials entry, handling callbacks, and securely returning authentication results to the Capacitor application.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
